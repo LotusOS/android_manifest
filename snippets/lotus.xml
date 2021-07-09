@@ -34,8 +34,8 @@
   <!-- CodeAurora additions -->
   <project path="device/lotus/sepolicy" name="android_device_lotus_sepolicy" remote="lotus" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="lotus" />
-  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" revision="eleven-legacy" remote="lotus" />
-  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" revision="eleven-legacy-um" remote="lotus" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" revision="11-legacy" remote="lotus" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" revision="11-legacy-um" remote="lotus" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="lotus" />
 
   <!-- External repos -->
