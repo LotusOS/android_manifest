@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <remote name="github"
+          fetch="https://github.com" />
+
+  <remote name="lotus"
+          fetch="https://github.com/LotusOS"
+          revision="refs/heads/11" />
+
+  <remote name="LotusOS-Devices"
+          fetch="https://github.com/LotusOS-Devices"
+          revision="refs/heads/11" />
+
+  <remote name="11-gitlab"
+          fetch="https://gitlab.com/LotusOS"
+          revision="11" />
+
+  <remote  name="github/hentaiOS"
+           fetch="https://github.com/hentaiOS"
+           revision="refs/heads/Rika" />
+
+  <remote  name="gitlab/hentaiOS"
+           fetch="https://gitlab.com/hentaiOS"
+           revision="refs/heads/Rika" />
+
+  <remote  name="octavi"
+           fetch="https://github.com/Octavi-OS"
+           revision="refs/heads/11" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com" />
+  
+  <!-- CodeAurora additions -->
+  <project path="device/lotus/sepolicy" name="android_device_lotus_sepolicy" remote="lotus" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="lotus" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" revision="eleven-legacy" remote="lotus" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" revision="eleven-legacy-um" remote="lotus" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="lotus" />
+
+  <!-- External repos -->
+  <project path="external/guice" name="android_external_guice" remote="lotus" />
+  <project path="external/libcxx" name="android_external_libcxx" remote="lotus" />
+  <project path="external/faceunlock" name="android_external_faceunlock" remote="lotus" />
+  <project path="external/selinux" name="android_external_selinux" remote="lotus" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="lotus" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="lotus" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="lotus" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="lotus" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="lotus" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="lotus" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="lotus" />
+
+  <!-- General repos -->
+  <project path="art" name="android_art" remote="lotus" />
+  <project path="bionic" name="android_bionic" remote="lotus" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="lotus" />
+  <project path="build/make" name="android_build" remote="lotus" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/blueprint" name="android_build_blueprint" remote="lotus" />
+  <project path="build/soong" name="android_build_soong" remote="lotus" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="libcore" name="android_libcore" remote="lotus" />
+  <project path="manifest" name="android_manifest" remote="lotus" />
+  <project path="platform_testing" name="android_platform_testing" remote="lotus" />
+  <project path="vendor/lotus" name="android_vendor_lotus" remote="lotus" />
+ 
+  <project path="hardware/qcom/sm7150/media" name="platform_hardware_qcom_sm7150_media" groups="pdk" remote="github/hentaiOS" revision="queenslave" />
+  <project path="hardware/qcom/sm7250/gps" name="platform_hardware_qcom_sm7250_gps" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom/sm7250/media" name="platform_hardware_qcom_sm7250_media" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom/sm8150/display" name="platform_hardware_qcom_sm8150_display" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom/sm8150/media" name="platform_hardware_qcom_sm8150_media" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="lotus" revision="11-caf" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/lotus/interfaces" name="android_hardware_lotus_interfaces" remote="lotus" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="lotus" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="lotus" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="lotus" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="lotus" revision="11-caf" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="lotus" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="lotus" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="lotus" />
+  <!-- <project path="packages/apps/LotusSettings" name="android_packages_apps_Lotus" remote="lotus" /> -->
+  <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="lotus" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="lotus" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="lotus" />
+  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="lotus" />
+  <project path="packages/apps/PermissionController" name="android_packages_apps_PackageInstaller" remote="lotus" />
+  <project path="packages/apps/PotatoPlugins" name="android_packages_apps_PotatoPlugins" remote="lotus" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="lotus" />
+  <project path="packages/apps/SimpleDeviceConfig" name="android_packages_apps_SimpleDeviceConfig" remote="lotus" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="lotus" />
+  <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="lotus" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="lotus" />
+  <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="lotus" />
+  <project path="packages/apps/Updates" name="android_packages_apps_Updates" remote="lotus" />
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="lotus" />
+
+  <!-- Prebuilt repos -->
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="octavi" clone-depth="1" />
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" clone-depth="1" remote="lotus" />
+
+  <!-- Providers repos -->
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="lotus" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="lotus" />
+
+  <!-- Services repos -->
+  <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="lotus" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="lotus" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="lotus" />
+
+  <!-- System repos -->
+  <project path="system/bt" name="android_system_bt" remote="lotus" />
+  <project path="system/core" name="android_system_core" remote="lotus" />
+  <project path="system/incremental_delivery" name="android_system_incremental_delivery" remote="lotus" />
+  <project path="system/netd" name="android_system_netd" remote="lotus" />
+  <project path="system/security" name="android_system_security" remote="lotus" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="lotus" />
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="lotus" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="lotus" />
+  <project path="system/vold" name="android_system_vold" remote="lotus" />
+
+  <!-- Tools repos -->
+  <project path="tools/metalava" name="android_tools_metalava" remote="lotus" />
+
+  <!-- Vendor repos -->
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="lotus" />
+  <project path="vendor/themes" name="android_vendor_themes" remote="lotus" />
+  <project path="vendor/oplauncher" name="android_vendor_oplauncher" remote="lotus" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="lotus" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="lotus" />
+
+</manifest>

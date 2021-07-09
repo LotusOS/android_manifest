@@ -63,7 +63,7 @@ Alright, so now we’re getting there. I have outlined the basics of what we’r
 To initialize your local repository, use a command like this:
 
 ```bash
-    repo init -u https://github.com/CherishOS/android_manifest.git -b eleven 
+    repo init -u https://github.com/LotusOS/android_manifest.git -b 11 
 ```
 
 Then to sync up:
@@ -72,7 +72,7 @@ Then to sync up:
 ```bash
     repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
-Compilation of Cherish OS:
+Compilation of Lotus OS:
 ====================
 
 From root directory of Project, perform following commands in terminal
@@ -87,7 +87,7 @@ From root directory of Project, perform following commands in terminal
 Important for FOD devices
 ====================
  
-### Also set this flag in device tree cherish_device.mk 
+### Also set this flag in device tree lotus_device.mk 
 ```bash
 # FOD animations
 TARGET_WANTS_FOD_ANIMATIONS := true

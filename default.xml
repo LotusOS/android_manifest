@@ -829,7 +829,7 @@
   <!-- Add some LineageOS repos -->
   <include name="snippets/lineage.xml" />
 
-  <!-- Add all CherishOS repos -->
-  <include name="snippets/cherish.xml" />
+  <!-- Add all LotusOS repos -->
+  <include name="snippets/lotus.xml" />
 
 </manifest>
