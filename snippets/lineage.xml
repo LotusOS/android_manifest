@@ -119,7 +119,7 @@
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="lineage" />
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="lineage" />
   <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" remote="lineage" clone-depth="1" />
-  <project path="prebuilts/tools-cherish" name="android_prebuilts_tools-lineage" remote="lineage" clone-depth="1" />
+  <project path="prebuilts/tools-lotus" name="android_prebuilts_tools-lineage" remote="lineage" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="lineage" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="lineage" clone-depth="1" />
 
