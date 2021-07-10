@@ -106,7 +106,7 @@
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="lotus" />
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="lotus" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="lotus" />
-  <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="lotus" />
+  <!-- <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="lotus" /> -->
   <!-- <project path="packages/apps/Updates" name="android_packages_apps_Updates" remote="lotus" /> -->
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="lotus" />
 
