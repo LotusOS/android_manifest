@@ -107,7 +107,7 @@
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="lotus" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="lotus" />
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="lotus" />
-  <project path="packages/apps/Updates" name="android_packages_apps_Updates" remote="lotus" />
+  <!-- <project path="packages/apps/Updates" name="android_packages_apps_Updates" remote="lotus" /> -->
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="lotus" />
 
   <!-- Prebuilt repos -->
@@ -131,7 +131,7 @@
   <project path="system/security" name="android_system_security" remote="lotus" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="lotus" />
   <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="lotus" />
-  <project path="system/update_engine" name="android_system_update_engine" remote="lotus" />
+  <!-- <project path="system/update_engine" name="android_system_update_engine" remote="lotus" /> -->
   <project path="system/vold" name="android_system_vold" remote="lotus" />
 
   <!-- Tools repos -->
