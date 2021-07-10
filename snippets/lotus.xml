@@ -131,7 +131,7 @@
   <project path="system/security" name="android_system_security" remote="lotus" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="lotus" />
   <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="lotus" />
-  <!-- <project path="system/update_engine" name="android_system_update_engine" remote="lotus" /> -->
+  <project path="system/update_engine" name="android_system_update_engine" remote="lotus" />
   <project path="system/vold" name="android_system_vold" remote="lotus" />
 
   <!-- Tools repos -->
