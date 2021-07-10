@@ -41,7 +41,7 @@
   <!-- External repos -->
   <project path="external/guice" name="android_external_guice" remote="lotus" />
   <project path="external/libcxx" name="android_external_libcxx" remote="lotus" />
-  <project path="external/faceunlock" name="android_external_faceunlock" remote="lotus" />
+  <!-- <project path="external/faceunlock" name="android_external_faceunlock" remote="lotus" /> -->
   <project path="external/selinux" name="android_external_selinux" remote="lotus" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="lotus" />
 
