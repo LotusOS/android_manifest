@@ -65,7 +65,8 @@
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="cherish" />
   <project path="hardware/cherish/interfaces" name="android_hardware_cherish_interfaces" remote="cherish" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="cherish" />
-  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom-caf_msm8998_display" groups="pdk-qcom,qcom,qcom_display" revision="caf-msm8998" remote="cherish" />
+  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom-caf_msm8998_display" revision="caf-msm8998" remote="cherish" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom-caf_msm8998_audio" revision="caf-msm8998" remote="cherish" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="twelve-caf" remote="cherish" />
 
   <!-- Packages -->
