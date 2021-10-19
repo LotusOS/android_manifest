@@ -1092,9 +1092,9 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <!-- Cherish Manifest -->
+  <!-- LotusOS Manifest -->
   <include name="snippets/remove.xml" />
-  <include name="snippets/cherish.xml" />
+  <include name="snippets/lotus.xml" />
   <include name="snippets/lineage.xml" />
 
 </manifest>
