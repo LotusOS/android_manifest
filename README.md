@@ -9,3 +9,9 @@ Then to sync up:
 ```bash
     repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
+
+## Credit
+```bash
+    CherishOS
+    LineageOS
+```
