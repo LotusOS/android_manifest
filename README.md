@@ -1,6 +1,6 @@
 # android_manifest
 ```bash
-    repo init -u https://github.com/LotusOS-Temp/android_manifest.git -b 12
+    repo init -u https://github.com/LotusOS/android_manifest.git -b 12
 ```
 
 Then to sync up:
