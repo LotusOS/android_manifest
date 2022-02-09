@@ -103,6 +103,7 @@
   <remove-project name="platform/hardware/qcom/sm7250/gps" />
 
   <!-- Packages -->
+  <remove-project name="packages/apps/ThemePicker" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Bluetooth" />
   <remove-project name="platform/packages/apps/Settings" />
