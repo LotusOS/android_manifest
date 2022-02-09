@@ -2,18 +2,22 @@
 <manifest>
 
   <!-- Github -->
-  <remote  name="github"
-           fetch="https://github.com/" />
+  <remote name="github"
+          fetch="https://github.com/" />
 
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="twelve"/>
+  
   <!-- GitHub -->
-  <remote  name="lotus"
-           fetch="https://github.com/LotusOS/"
-           revision="12" />
+  <remote name="lotus"
+          fetch="https://github.com/LotusOS/"
+          revision="12" />
 
   <!-- GitLab-CherishOS -->
-  <remote  name="gitlab"
-           revision="twelve"
-           fetch="https://gitlab.com/CherishOS" />
+  <remote name="gitlab"
+          revision="twelve"
+          fetch="https://gitlab.com/CherishOS" />
 
   <!-- Rootdir -->
   <project path="bionic" name="android_bionic" groups="pdk" remote="lotus" />
@@ -65,10 +69,10 @@
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="lotus" />
   <project path="hardware/lotus/interfaces" name="android_hardware_lotus_interfaces" remote="lotus" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="lotus" />
-  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom-caf_msm8998_display" revision="12-caf-msm8998" remote="lotus" />
-  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom-caf_msm8998_audio" revision="12-caf-msm8998" remote="lotus" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="12-caf" remote="lotus" />
-  <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom-caf_sm8250_display" revision="12" remote="lotus" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom-caf_sm8250_media" remote="pixel" />
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="lotus" />
